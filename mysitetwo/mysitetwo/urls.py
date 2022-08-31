@@ -1,4 +1,4 @@
-"""myfirst URL Configuration
+"""mysitetwo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -15,11 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myfirst import views
+from mysitetwo import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/',views.aboutUS),
-    path('p/',views.simple),
-    path('p/<courseid>',views.dynamic)
+    path('',views.homepage),
+    path('about/',views.aboutus),
 ]
